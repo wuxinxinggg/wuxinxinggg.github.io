@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="pydog" />
+  <meta name="keywords" content="android," />
 
 
 
@@ -39,19 +39,43 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="Activity 是什么
+可以和用户进行交互的基本的图形呈现单元
+三种状态：
+运行状态
+暂停状态
+停止状态
+
+
+生命周期：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://pydog.gitcafe.io/2015/10/11/hello-world/index.html">
+<meta property="og:title" content="android activity">
+<meta property="og:url" content="http://pydog.gitcafe.io/2015/10/17/android-activity/index.html">
 <meta property="og:site_name" content="pydog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2015-10-11T12:57:20.446Z">
+<meta property="og:description" content="Activity 是什么
+可以和用户进行交互的基本的图形呈现单元
+三种状态：
+运行状态
+暂停状态
+停止状态
+
+
+生命周期：">
+<meta property="og:image" content="http://pydog.gitcafe.io/img/activity_lifetime.png">
+<meta property="og:image" content="http://pydog.gitcafe.io/img/new_layout.png">
+<meta property="og:image" content="http://pydog.gitcafe.io/img/create_activity.png">
+<meta property="og:updated_time" content="2015-10-17T14:48:13.570Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="android activity">
+<meta name="twitter:description" content="Activity 是什么
+可以和用户进行交互的基本的图形呈现单元
+三种状态：
+运行状态
+暂停状态
+停止状态
+
+
+生命周期：">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -61,7 +85,7 @@ Quick">
   };
 </script>
 
-  <title> Hello World | pydog </title>
+  <title> android activity | pydog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -181,7 +205,7 @@ Quick">
           
           
             
-              Hello World
+              android activity
             
           
         </h1>
@@ -190,8 +214,8 @@ Quick">
       <div class="post-meta">
         <span class="post-time">
           Posted on
-          <time itemprop="dateCreated" datetime="2015-10-11T20:57:20+08:00" content="2015-10-11">
-            2015-10-11
+          <time itemprop="dateCreated" datetime="2015-10-17T20:41:39+08:00" content="2015-10-17">
+            2015-10-17
           </time>
         </span>
 
@@ -201,8 +225,8 @@ Quick">
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/10/11/hello-world/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/11/hello-world/" itemprop="commentsCount"></span>
+              <a href="/2015/10/17/android-activity/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/17/android-activity/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -216,33 +240,103 @@ Quick">
       
 
       
-        <span itemprop="articleBody"><p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a><br><a id="more"></a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <span itemprop="articleBody"><h3 id="Activity_是什么">Activity 是什么</h3><ol>
+<li>可以和用户进行交互的基本的图形呈现单元</li>
+<li>三种状态：<ul>
+<li>运行状态</li>
+<li>暂停状态</li>
+<li>停止状态</li>
+</ul>
+</li>
+<li><p>生命周期：<br> <img src="/img/activity_lifetime.png" alt="activity_lifetime"></p>
+<a id="more"></a>
+</li>
+</ol>
+<h3 id="绑定自己的布局">绑定自己的布局</h3><p><img src="/img/new_layout.png" alt="new_layout"></p>
+<h3 id="创建Activity">创建Activity</h3><p><img src="/img/create_activity.png" alt="create_activity"></p>
+<h3 id="启动另一个Active">启动另一个Active</h3><p><code>startActivity(new Intent(MainActivity.this,SecActivity.class));</code></p>
+<h3 id="Activity之间传递数据">Activity之间传递数据</h3><ul>
+<li><p>通过Intent传递</p>
+<ul>
+<li><p>传递单个数据</p>
+<ol>
+<li><p>初始化一个Intent对象<br><code>Intent i = new Intent(MainActivity.this,SecActivity.class);</code></p>
+</li>
+<li><p>通过putExtra()方法传递数据<br><code>i.putExtra(&quot;hello&quot;, &quot;hello world&quot;);</code></p>
+</li>
+<li><p>在接受数据的Activity通过getIntent()方法获取Intent，通过Intent的getStringExtra()等方法获取数据<br><code>getIntent().getStringExtra(&quot;hello&quot;);</code></p>
+</li>
+</ol>
+</li>
+<li><p>传递多个数据</p>
+<ol>
+<li><p>初始化一个Intent和Bundle对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Intent i = <span class="keyword">new</span> Intent(MainActivity.<span class="keyword">this</span>,SecActivity.class);</span><br><span class="line">   Bundle b = <span class="keyword">new</span> Bundle();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过putString()等方法给Bundle填充数据</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">b.putString(<span class="string">"name"</span>,<span class="string">"pydog"</span>);</span><br><span class="line">b.putInt(<span class="string">"age"</span>,<span class="number">18</span>);</span><br><span class="line">b.putString(<span class="string">"desc"</span>, <span class="string">"is a hansame boy"</span>);</span><br><span class="line"><span class="comment">//1.使用putExtras()方法</span></span><br><span class="line"><span class="comment">//i.putExtras(b); </span></span><br><span class="line"><span class="comment">//2.使用putExtra()方法</span></span><br><span class="line">i/putExtra(<span class="string">"data"</span>, b);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在接受数据的Activity通过getIntent()方法获取Intent，初始化一个Bundle对象，通过getExtras方法获取Intent的数据</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//对应送数据的时候使用putExtras()方法</span></span><br><span class="line"><span class="comment">//b = getIntent().getExtras();</span></span><br><span class="line"><span class="comment">//对应送数据的时候使用putExtra("data", b)方法</span></span><br><span class="line">b = getIntent().getExtra(<span class="string">"data"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>传递值对象</p>
+<ol>
+<li><p>什么是值对象：==自定义的，有数据类型的对象== </p>
+</li>
+<li><p>怎么传递:通过实现Parcelable或者Serializable</p>
+<ul>
+<li><p>Parcelable是Android针对移动设备优化的，用于序列化对象的接口，效率较高;<br>遇到一个问题，遗留后续解决: ==Parcelable传bundle数据的时候有问题==</p>
+</li>
+<li><p>Serializable是Java自带的，用于序列化对象的接口，效率较低；</p>
+</li>
+</ul>
+</li>
+<li><p>注意什么：</p>
+<ul>
+<li>Java的构造函数定义为public 类名（）</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>接受Activity的返回值</p>
+<ul>
+<li><p>在接收返回值的Activity启动另一个Activity的使用使用<code>startActivityForResult(Intent intent, int requestCode)</code>启动</p>
+</li>
+<li><p>在要返回的Activity通过<code>Intent</code>设置返回值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Intent i = <span class="keyword">new</span> Intent();</span><br><span class="line">i.putExtra(<span class="string">"data"</span>, meditText.getText().toString());</span><br><span class="line">setResult(<span class="number">1</span>, i);</span><br><span class="line">finish();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在接收返回值的Activity重写<code>onActivityResult</code>方法，其中的参数<code>data</code>即为返回的Activity传过来的Intent</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onActivityResult</span><span class="params">(<span class="keyword">int</span> requestCode, <span class="keyword">int</span> resultCode, Intent data)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">super</span>.onActivityResult(requestCode, resultCode, data);</span><br><span class="line">       Log.d(<span class="string">"wxxggg"</span>, <span class="string">"resultCode = "</span>+resultCode);</span><br><span class="line">       mtextView.setText(<span class="string">"另一个Activity返回的值是: "</span>+data.getStringExtra(<span class="string">"data"</span>));</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/android/" rel="tag">#android</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/10/17/android-activity/" rel="prev">android activity</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/10/11/hexo-blog/" rel="next">hexo blog</a>
+              <a href="/2015/10/11/hello-world/" rel="next">Hello World</a>
             
           </div>
         </div>
@@ -267,8 +361,8 @@ Quick">
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2015/10/11/hello-world/"
-                   data-title="Hello World" data-url="http://pydog.gitcafe.io/2015/10/11/hello-world/">
+              <div class="ds-thread" data-thread-key="2015/10/17/android-activity/"
+                   data-title="android activity" data-url="http://pydog.gitcafe.io/2015/10/17/android-activity/">
               </div>
             
           </div>
@@ -350,7 +444,7 @@ Quick">
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick_Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create_a_new_post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run_server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate_static_files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy_to_remote_sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Activity_是什么"><span class="nav-number">1.</span> <span class="nav-text">Activity 是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定自己的布局"><span class="nav-number">2.</span> <span class="nav-text">绑定自己的布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建Activity"><span class="nav-number">3.</span> <span class="nav-text">创建Activity</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动另一个Active"><span class="nav-number">4.</span> <span class="nav-text">启动另一个Active</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Activity之间传递数据"><span class="nav-number">5.</span> <span class="nav-text">Activity之间传递数据</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
